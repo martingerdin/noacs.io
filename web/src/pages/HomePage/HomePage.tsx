@@ -6,7 +6,7 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
 
-      <h1>noAcs</h1>
+      <h1>noacs</h1>
       <p>
           A Virtual Research Lab
       </p>
