@@ -13,7 +13,8 @@ export default async () => {
       // To try this example data with the UserExample model in schema.prisma,
       // uncomment the lines below and run 'yarn rw prisma migrate dev'
       //
-      // { name: 'alice', email: 'alice@example.com' },
+	{id: "ttris", title: "Trauma Triage Study", aim: "To compare and validate published prediction models for emergency department trauma triage", design:"Prospective cohort"},
+	{id: "taft", title: "Trauma Audit Filters Trial", aim: "To assess if institutional implementation of audit filters reduce mortality in adult trauma patients", design: "Controlled interrupted time series trial"},
       // { name: 'mark', email: 'mark@example.com' },
       // { name: 'jackie', email: 'jackie@example.com' },
       // { name: 'bob', email: 'bob@example.com' },

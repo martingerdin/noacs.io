@@ -1,5 +1,6 @@
 import type { ProjectsQuery } from 'types/graphql'
 import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import { Link, routes } from "@redwoodjs/router"
 
 
 export const QUERY = gql`
@@ -29,7 +30,11 @@ export const Success = ({ projects }: CellSuccessProps<ProjectsQuery>) => {
 	  const {id, title, aim, design} = item
 	  return (
 	    <article key={id}>
-		<header><h3>{title}</h3></header>
+		<header>
+		    <h3>
+			<Link to={routes.project({ id: id })}>{title}</Link>
+		    </h3>
+		</header>
 		<h4>Aim</h4>
 		<p>{aim}</p>
 		<h4>Design</h4>
