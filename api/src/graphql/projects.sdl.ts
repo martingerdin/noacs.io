@@ -8,8 +8,8 @@ export const schema = gql`
   }
 
   type Query {
-    projects: [Project!]! @requireAuth
-    project(id: String!): Project @requireAuth
+    projects: [Project!]! @skipAuth
+    project(id: String!): Project @skipAuth
   }
 
   input CreateProjectInput {
