@@ -5,7 +5,7 @@ import ProjectsCell from "src/components/ProjectsCell"
 const HomePage = () => {
   return (
     <>
-      <MetaTags title="Home" description="Home page" />
+      <MetaTags title="No Accidents Research Lab" description="Home page" />
       <ProjectsCell />
     </>
   )
