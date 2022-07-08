@@ -1,5 +1,5 @@
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -22,6 +22,10 @@ model Project {
 model User {
   id                  Int @id @default(autoincrement())
   email               String  @unique
+  firstName	      String  @default("")
+  lastName	      String  @default("")
+  institution	      String  @default("")
+  bio		      String  @default("")
   hashedPassword      String
   salt                String
   resetToken          String?
